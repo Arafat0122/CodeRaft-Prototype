@@ -1,3 +1,20 @@
+// JavaScript for hamburger menu
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+const body = document.body;
+
+// Toggle the navigation menu
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close the dropdown menu if clicked outside
+body.addEventListener('click', (event) => {
+    if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        navLinks.classList.remove('active');
+    }
+});
+
 // Display SweetAlert2 message when "Learn Web Development" button is clicked
 document.getElementById('learn-webdev').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default action of the link
