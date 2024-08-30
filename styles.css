@@ -1,0 +1,405 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background with Enhanced Technological Pattern */
+body {
+    /* background-color: #fff; */
+    background-image:
+        radial-gradient(circle, rgba(0, 180, 216, 0.15) 1px, transparent 1px),
+        radial-gradient(circle, rgba(0, 180, 216, 0.15) 1px, transparent 1px),
+        linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 75%, transparent 75%, transparent),
+        linear-gradient(45deg, transparent 25%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05));
+    background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+    background-position: 0 0, 5px 5px, 0 0, 25px 25px;
+}
+
+/* Header & Navigation */
+header {
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(249, 249, 249, 0.8);
+    /* Slightly transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow for depth */
+}
+
+.logo {
+    max-width: 70px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge logo on hover */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #00b4d8;
+    /* Light blue for navigation links */
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+    /* Darker blue on hover */
+}
+
+.cta .btn-primary {
+    background: #00b4d8;
+    /* Light blue for primary buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.cta .btn-primary:hover {
+    background: #0077b6;
+    /* Darker blue on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: 20px;
+    text-align: center;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('tech-pattern.svg') no-repeat center/cover;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 1;
+    /* Ensure text is above graphics */
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0077b6;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.btn-secondary {
+    background: #0077b6;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #005f8d;
+}
+
+/* GIF Graphics */
+.hero-graphics {
+    margin-top: 40px;
+}
+
+.coding-gif {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 20px;
+    }
+
+    .hero-content {
+        text-align: left;
+        max-width: 50%;
+        margin-right: 20px;
+    }
+
+    .hero-graphics {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+/* Services Section */
+#services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#services h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: #000;
+    /* Black for headings */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #ffffff;
+    /* Light background for service boxes */
+    padding: 30px 20px;
+    width: 270px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0077b6;
+    /* Light blue for headings */
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #555;
+    /* Dark grey for text */
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #00b4d8;
+    /* Light blue for icons */
+}
+
+/* Light color backgrounds for different service boxes */
+.service-box:nth-child(1) {
+    background: #e3f2fd;
+    /* Light blue */
+}
+
+.service-box:nth-child(2) {
+    background: #ffecb3;
+    /* Light yellow */
+}
+
+.service-box:nth-child(3) {
+    background: #dcedc8;
+    /* Light green */
+}
+
+.service-box:nth-child(4) {
+    background: #ffccbc;
+    /* Light coral */
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: #0077b6;
+    /* Light blue for headings */
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#about p strong {
+    color: #0077b6;
+    /* Emphasize "CodeRaft" in light blue */
+}
+
+/* Optional: Add a subtle animation */
+#about {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #0077b6;
+    /* Light blue for headings */
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    /* Align text to the left for better readability */
+}
+
+.contact-input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-input-group input,
+.contact-input-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    /* Add space for the icon */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact-input-group input:focus,
+.contact-input-group textarea:focus {
+    border-bottom-color: #00b4d8;
+    /* Light blue for focus state */
+}
+
+.contact-input-group i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #00b4d8;
+    /* Light blue for icons */
+}
+
+#contact-form button {
+    background: #00b4d8;
+    /* Light blue for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form button:hover {
+    background: #0077b6;
+    /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    /* Dark footer background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

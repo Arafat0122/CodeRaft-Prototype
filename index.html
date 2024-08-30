@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.ibb.co/svk3hNy/Code-Raft-Icon.png" type="image/x-icon">
+    <title>CodeRaft - Web Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home"><img src="https://i.ibb.co/ZTMQ6WN/Code-Raft-Logo.png" alt="CodeRaft Logo" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cta">
+                <a href="#" id="learn-webdev" class="btn-primary">Learn Web Development</a>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Empowering Your Digital Presence</h1>
+                <p>Specializing in Web Development, Design, Management Consultation, and Maintenance. Transform your
+                    digital experience with us.</p>
+                <a href="#services" class="btn-secondary">Explore Our Services</a>
+            </div>
+            <div class="hero-graphics">
+                <img src="https://user-images.githubusercontent.com/22107794/139606420-eaa56bc7-9377-4f5d-9356-aed07bed3143.gif"
+                    alt="Coding Animation" class="coding-gif">
+            </div>
+        </div>
+    </header>
+
+    <!-- Services section -->
+
+    <div id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>We build responsive and modern websites tailored to your needs.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>Web Designing</h3>
+                <p>Creative designs that enhance user experience and engagement.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3>Web Management</h3>
+                <p>Professional web management and consultation services.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-wrench service-icon"></i>
+                <h3>Web Maintenance</h3>
+                <p>Reliable maintenance services to keep your website running smoothly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+
+    <section id="about">
+        <h2>About CodeRaft</h2>
+        <p>
+            At <strong>CodeRaft</strong>, we are dedicated to elevating your digital presence through our comprehensive
+            range of web services. Our team of experts specializes in creating cutting-edge web solutions tailored to
+            your specific needs. Whether you are a small business looking to establish an online footprint or a large
+            enterprise seeking advanced web management, we have the expertise to drive your success.
+        </p>
+        <p>
+            We don't just build websites; we build experiences. Our approach combines creativity, technology, and a deep
+            understanding of the digital landscape to deliver results that make a real impact. Beyond services, we are
+            committed to educating the next generation of developers. Our web development courses are designed to be
+            practical, engaging, and aligned with industry standards, helping you stay ahead in a rapidly evolving
+            field.
+        </p>
+        <p>
+            At <strong>CodeRaft</strong>, your success is our mission. Let us help you navigate the digital waters and
+            reach new heights.
+        </p>
+    </section>
+
+    <!-- Contact section -->
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to take your digital presence to the next level? Get in touch with us today!</p>
+        <form id="contact-form">
+            <div class="contact-input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="contact-input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="contact-input-group">
+                <i class="fas fa-comment"></i>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CodeRaft. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
