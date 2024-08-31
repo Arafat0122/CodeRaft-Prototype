@@ -1,6 +1,5 @@
 # CodeRaft - Web Services
 <img src="https://i.ibb.co/ZTMQ6WN/Code-Raft-Logo.png" alt="CodeRaft Logo" width="200px">
-![CodeRaft Logo](https://i.ibb.co/ZTMQ6WN/Code-Raft-Logo.png)
 
 ## Table of Contents
 - [Overview](#overview)
